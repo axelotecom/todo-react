@@ -14,7 +14,7 @@ export const isUserAuthenticated = (): boolean => {
 };
 
 export const login = async (user: User): Promise<boolean> => {
-    return Axios.post('http://localhost:8074/api/authenticate', user)
+    return Axios.post(`${process.env.REACT_APP_AXELOTE_URL}/api/authenticate`, user)
         .then((res) => {
             if(res.data === 'BAD_USER_CREDENTIALS'){
                 return false;

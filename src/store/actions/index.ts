@@ -1,4 +1,4 @@
-import { AxeloteError, AxeloteVoidResponse } from '@axelote/js';
+import { AxeloteError, AxeloteResponse, AxeloteVoidResponse } from '@axelote/js';
 import { axelote } from 'config/axelote-config';
 import { todoRepository } from 'repositories/todo-repository';
 

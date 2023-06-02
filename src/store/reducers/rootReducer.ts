@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-expressions */
 import { ActionType, Action } from 'store/actions';
 
 const initialState = {};

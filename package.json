@@ -1,38 +1,35 @@
 {
-    "name": "axelote-todo-react",
+    "name": "demo-fe",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
         "@axelote/js": "0.2.3",
         "axios": "1.4.0",
-        "eslint-config-airbnb": "18.2.1",
         "js-cookie": "3.0.5",
         "react": "18.2.0",
         "react-beautiful-dnd": "13.1.1",
         "react-dom": "18.2.0",
         "react-redux": "8.0.5",
         "react-responsive": "9.0.2",
-        "react-scripts": "5.0.1",
+        "react-scripts": "^5.0.1",
         "react-transition-group": "4.4.5",
         "redux-thunk": "2.4.2",
         "styled-components": "6.0.0-rc.1"
+    },
+    "engine": {
+        "node" : ">=18"
     },
     "watch": {
         "dev-axelote": "src/**/*.ts"
     },
     "scripts": {
-        "watchoo": "npm-watch dev-axelote",
+        "watch": "npm-watch dev-axelote",
         "dev": "concurrently \"npm start\" \"npm-watch dev-axelote\"",
         "start": "react-scripts start",
         "dev-axelote": "axelote hash -f src/**/*.ts --noWrite --debug",
         "build": "react-scripts build && axelote hash -f build/**/*.js",
         "test": "react-scripts test",
         "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
-    },
-    "eslintConfig": {
-        "extends": [
-            "react-app"
-        ]
     },
     "browserslist": {
         "production": [
@@ -47,18 +44,17 @@
         ]
     },
     "devDependencies": {
-        "typescript": "4.9.5",
+        "@types/js-cookie": "3.0.3",
         "@types/node": "20.1.2",
         "@types/react": "18.2.6",
+        "@types/react-beautiful-dnd": "13.1.4",
         "@types/react-dom": "18.2.4",
         "@types/react-redux": "7.1.25",
         "@types/react-transition-group": "4.4.6",
         "@types/styled-components": "5.1.26",
-        "@types/js-cookie": "3.0.3",
-        "@types/react-beautiful-dnd": "13.1.4",
         "concurrently": "7.6.0",
-        "eslint-config-prettier": "8.8.0",
         "npm-watch": "0.11.0",
-        "prettier": "2.8.8"
+        "prettier": "2.8.8",
+        "typescript": "4.9.5"
     }
 }
