@@ -1,0 +1,10 @@
+{
+    "allowedCombinations" : [
+      ["select title, completed from todo", "where username = :username"],
+      ["insert into todo (title, username, completed) values (:title, :username, :completed)"],
+      ["update todo set title = :newTitle", "where title = :prevTitle and username = :username"],
+      ["delete from todo", "where title = :title and username = :username"],
+      ["update todo set completed = :completed", "where title = :title and username = :username"],
+      ["delete from todo", "where completed = true and username = :username"]
+    ]
+}
